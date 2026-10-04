@@ -28,7 +28,7 @@ productGrid.addEventListener("click", (event) => {
 
     const productLink = event.target.closest("[data-product]");
     if (productLink) {
-        messageField.value = `Olá! Gostaria de saber mais sobre ${productLink.dataset.product}.`;
+        messageField.value = `Olá! Gostaria de solicitar ${productLink.dataset.product} para entrega.`;
     }
 });
 
@@ -43,7 +43,7 @@ contactForm.addEventListener("submit", (event) => {
     const formData = new FormData(contactForm);
     const subject = encodeURIComponent(`Contato pelo site — ${formData.get("name")}`);
     const body = encodeURIComponent(
-        `Nome: ${formData.get("name")}\nE-mail: ${formData.get("email")}\n\nMensagem:\n${formData.get("message")}`
+        `Nome: ${formData.get("name")}\n\nProdutos para entrega:\n${formData.get("message")}`
     );
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
