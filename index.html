@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta
+        name="description"
+        content="No Varejão, você encontra alimentos fresquinhos, variedade e atendimento próximo. Conheça nossos produtos e faça seu pedido."
+    >
+    <title>Varejão — fresquinho, variado, do seu jeito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="inicio">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Varejão, início">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M7 13h26l-2.1 20H9.1L7 13Z" fill="currentColor"/>
+                        <path d="M14 14V10a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="m15 23 3.2 3.2 7-7" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">varejão<span>.</span></span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Por que escolher</a>
+                <a class="nav-cta" href="#contato">Fale com a gente <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow"><span class="eyebrow-dot"></span> BOM DE FEIRA, BOM DE MESA</span>
+                    <h1>Mais frescor.<br>Mais sabor.<br><span>Mais Varejão.</span></h1>
+                    <p class="hero-description">Uma seleção caprichada de alimentos para deixar sua rotina mais gostosa — com qualidade, variedade e aquele atendimento que faz a diferença.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#produtos">Conheça nossos produtos <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="#contato">Faça seu pedido <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="hero-proof">
+                        <span class="proof-icon" aria-hidden="true">✓</span>
+                        <p><strong>Qualidade em cada escolha</strong><br>Produtos selecionados com carinho para você.</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+                            alt="Banca colorida de frutas e vegetais frescos"
+                            fetchpriority="high"
+                        >
+                    </div>
+                    <div class="floating-note">
+                        <span class="note-icon" aria-hidden="true">✳</span>
+                        <span><strong>Fresquinho de verdade</strong><small>Escolhido pensando em você</small></span>
+                    </div>
+                    <span class="hero-orbit hero-orbit-one" aria-hidden="true"></span>
+                    <span class="hero-orbit hero-orbit-two" aria-hidden="true"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefit-strip" aria-label="Nossos compromissos">
+            <div class="container benefit-strip-inner">
+                <span><i aria-hidden="true">✳</i> Seleção cuidadosa</span>
+                <span><i aria-hidden="true">✳</i> Variedade para sua casa</span>
+                <span><i aria-hidden="true">✳</i> Atendimento próximo</span>
+                <span><i aria-hidden="true">✳</i> Qualidade todo dia</span>
+            </div>
+        </section>
+
+        <section class="products-section section" id="produtos">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">ESCOLHAS QUE FAZEM BEM</span>
+                        <h2>Tem sempre algo<br><span>bom pra levar.</span></h2>
+                    </div>
+                    <p>Do hortifruti à despensa, encontre ingredientes gostosos para todas as refeições. Fale com a gente para consultar disponibilidade.</p>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Variedade de frutas frescas e coloridas"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Fresquinhos</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">DA ESTAÇÃO</span>
+                            <h3>Frutas selecionadas</h3>
+                            <p>Cor, sabor e frescor para deixar seu dia mais leve.</p>
+                            <a class="product-link" href="#contato" data-product="Frutas selecionadas">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Folhas e vegetais frescos para salada"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Da horta</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">FRESCOR NATURAL</span>
+                            <h3>Verduras e legumes</h3>
+                            <p>Ingredientes cheios de frescor para suas receitas.</p>
+                            <a class="product-link" href="#contato" data-product="Verduras e legumes">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Pães artesanais recém-assados"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Feito com carinho</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">PARA COMPARTILHAR</span>
+                            <h3>Pães e padaria</h3>
+                            <p>Opções deliciosas para acompanhar qualquer momento.</p>
+                            <a class="product-link" href="#contato" data-product="Pães e padaria">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Leite e produtos frescos refrigerados"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Para o dia a dia</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">NA MEDIDA CERTA</span>
+                            <h3>Laticínios</h3>
+                            <p>Clássicos que não podem faltar na sua geladeira.</p>
+                            <a class="product-link" href="#contato" data-product="Laticínios">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1534483509719-3feaee7c30da?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Grãos variados para completar a despensa"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Despensa completa</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">BONS INGREDIENTES</span>
+                            <h3>Grãos e mercearia</h3>
+                            <p>O essencial e muito mais para sua cozinha.</p>
+                            <a class="product-link" href="#contato" data-product="Grãos e mercearia">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                                alt="Seleção de cortes frescos no açougue"
+                                loading="lazy"
+                            >
+                            <span class="product-tag">Qualidade selecionada</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">PARA SUA RECEITA</span>
+                            <h3>Carnes e proteínas</h3>
+                            <p>Boas opções para montar refeições cheias de sabor.</p>
+                            <a class="product-link" href="#contato" data-product="Carnes e proteínas">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="products-note">A disponibilidade dos produtos pode variar. Consulte nossa equipe para informações atualizadas.</p>
+            </div>
+        </section>
+
+        <section class="why-section section" id="sobre">
+            <div class="container why-layout">
+                <div class="why-copy">
+                    <span class="eyebrow">BOM DE COMPRAR. MELHOR DE VOLTAR.</span>
+                    <h2>Comprar bem é<br><span>se sentir em casa.</span></h2>
+                    <p>Acreditamos que comida boa começa com boas escolhas. Por isso, reunimos variedade e cuidado para tornar sua compra mais simples e gostosa.</p>
+                    <a class="button button-light" href="#contato">Venha conversar <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="value-grid">
+                    <article class="value-card">
+                        <span class="value-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M16 27s-11-6.2-11-14a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 7.8-11 14-11 14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M12 16h8m-4-4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <h3>Escolhido com cuidado</h3>
+                        <p>Uma seleção feita para levar mais qualidade à sua mesa.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M5 11h14v13H5zM19 15h5l4 5v4h-9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <circle cx="10" cy="25" r="2.5" fill="white" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="23" cy="25" r="2.5" fill="white" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </span>
+                        <h3>Praticidade na rotina</h3>
+                        <p>Mais opções em um só lugar para facilitar suas compras.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M5 13h22M8 13l2 14h12l2-14M12 13l4-9 4 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 19h6m-3-3v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <h3>Variedade de verdade</h3>
+                        <p>Do básico ao especial, tem sempre algo bom para descobrir.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-icon" aria-hidden="true">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <path d="M5 16a11 11 0 1 1 3.2 7.8M5 25v-7h7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 16h8m-4-4v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <h3>Gente que entende</h3>
+                        <p>Um atendimento próximo, com atenção ao que você precisa.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section" id="contato">
+            <div class="container contact-card">
+                <div class="contact-copy">
+                    <span class="eyebrow">VAMOS CONVERSAR?</span>
+                    <h2>Sua próxima compra<br><span>começa por aqui.</span></h2>
+                    <p>Quer saber mais sobre nossos produtos ou fazer um pedido? Envie sua mensagem e fale com a nossa equipe.</p>
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon" aria-hidden="true">✉</span>
+                        <span>
+                            <strong>Atendimento direto</strong>
+                            <small>Conte pra gente o que você está procurando.</small>
+                        </span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Seu nome</label>
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        placeholder="Como podemos chamar você?"
+                        required
+                    >
+                    <label for="email">Seu e-mail</label>
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="voce@email.com"
+                        required
+                    >
+                    <label for="message">Como podemos ajudar?</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="3"
+                        placeholder="Conte o que você procura..."
+                        required
+                    ></textarea>
+                    <button class="button button-primary form-submit" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button>
+                    <p class="form-note" id="form-note" aria-live="polite">A mensagem será preparada no seu aplicativo de e-mail.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="#inicio" aria-label="Varejão, início">
+                    <span class="brand-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <path d="M7 13h26l-2.1 20H9.1L7 13Z" fill="currentColor"/>
+                            <path d="M14 14V10a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <path d="m15 23 3.2 3.2 7-7" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-name">varejão<span>.</span></span>
+                </a>
+                <p>Mais frescor, sabor e carinho<br>para o seu dia a dia.</p>
+            </div>
+            <div class="footer-links">
+                <span class="footer-label">NAVEGUE</span>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Por que escolher</a>
+                <a href="#contato">Fale com a gente</a>
+            </div>
+            <div class="footer-links">
+                <span class="footer-label">VAREJÃO</span>
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Conheça nossos produtos</a>
+                <a href="#contato">Faça seu pedido</a>
+            </div>
+            <a class="footer-contact" href="#contato">
+                Tem alguma dúvida?
+                <strong>Estamos por aqui <span aria-hidden="true">↗</span></strong>
+            </a>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="current-year"></span> Varejão. Todos os direitos reservados.</span>
+            <a href="#inicio">Feito para deixar o seu dia mais gostoso <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+</body>
+</html>
