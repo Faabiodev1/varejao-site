@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Cadastre-se para fazer parte da equipe Varejão.">
+    <title>Trabalhe conosco — Varejão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="trabalhe-conosco.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container header-inner careers-header-inner">
+            <a class="brand" href="index.html" aria-label="Varejão, início">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M7 13h26l-2.1 20H9.1L7 13Z" fill="currentColor"/>
+                        <path d="M14 14V10a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <path d="m15 23 3.2 3.2 7-7" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="brand-name">varejão<span>.</span></span>
+            </a>
+            <a class="careers-back-link" href="index.html">Voltar ao início</a>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="careers-section">
+            <div class="container">
+                <div class="careers-card">
+                    <span class="eyebrow">FAÇA PARTE DA NOSSA EQUIPE</span>
+                    <h1>Trabalhe <span>conosco.</span></h1>
+                    <p class="careers-intro">Conte um pouco sobre você e a oportunidade que procura. Queremos conhecer pessoas que gostem de atender bem e fazer a diferença.</p>
+
+                    <form class="careers-form" id="careers-form">
+                        <label for="candidate-name">Nome completo</label>
+                        <label for="candidate-email">E-mail</label>
+                        <input id="candidate-name" name="name" type="text" autocomplete="name" placeholder="Seu nome" required>
+                        <input id="candidate-email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+
+                        <label for="candidate-phone">Telefone</label>
+                        <label for="candidate-position">Área de interesse</label>
+                        <input id="candidate-phone" name="phone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
+                        <select id="candidate-position" name="position" required>
+                            <option value="" disabled selected>Selecione uma área</option>
+                            <option value="Atendimento">Atendimento</option>
+                            <option value="Caixa">Caixa</option>
+                            <option value="Reposição">Reposição</option>
+                            <option value="Hortifruti">Hortifruti</option>
+                            <option value="Outra área">Outra área</option>
+                        </select>
+
+                        <label class="careers-full-width" for="candidate-message">Fale um pouco sobre você</label>
+                        <textarea class="careers-full-width" id="candidate-message" name="message" rows="5" placeholder="Conte sobre sua experiência e disponibilidade." required></textarea>
+
+                        <button class="button button-primary careers-submit" type="submit">Enviar meu cadastro <span aria-hidden="true">→</span></button>
+                        <p class="careers-note" id="careers-note" aria-live="polite">O envio abre seu aplicativo de e-mail. Seus dados só serão enviados após a configuração do endereço de recrutamento.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
